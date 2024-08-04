@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="768.0" prefWidth="1067.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.ManagerMenuController">
+    <children>
+      <AnchorPane prefHeight="768.0" prefWidth="1067.0">
+         <children>
+            <Label layoutX="915.0" layoutY="1.0" text="Manager">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="13.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Inventory">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToTrends" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Trends">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="513.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToSupplierOrder" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Supplier Orders">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit" layoutX="763.75" layoutY="59.0" mnemonicParsing="false" onAction="#initialize" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Edit">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <ScrollPane fx:id="scroll" layoutX="274.0" layoutY="125.0" prefHeight="538.0" prefWidth="740.0">
+               <content>
+                  <AnchorPane fx:id="menuItemsArea" prefHeight="538.0" prefWidth="740.0" />
+               </content></ScrollPane>
+            <Button fx:id="entreesButton" layoutX="33.0" layoutY="150.0" mnemonicParsing="false" onAction="#clickEntrees" prefHeight="50.0" prefWidth="209.0" text="Entrees">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="sidesButton" layoutX="33.0" layoutY="275.0" mnemonicParsing="false" onAction="#clickSides" prefHeight="50.0" prefWidth="209.0" text="Sides">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="beveragesButton" layoutX="33.0" layoutY="400.0" mnemonicParsing="false" onAction="#clickBeverages" prefHeight="50.0" prefWidth="209.0" text="Beverages">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="dessertsButton" layoutX="33.0" layoutY="525.0" mnemonicParsing="false" onAction="#clickDesserts" prefHeight="50.0" prefWidth="209.0" text="Desserts">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="824.0" layoutY="667.0" mnemonicParsing="false" onAction="#addMenuItem" style="-fx-background-color: white; -fx-border-color: black;" text="Add Menu Item">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="seasonalButton" layoutX="33.0" layoutY="650.0" maxWidth="209.0" mnemonicParsing="false" onAction="#clickSeasonal" prefWidth="209.0" text="Seasonal">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="5.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: white; -fx-border-color: black;" text="Refresh">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="635.0" layoutY="-7.0" mnemonicParsing="false" onAction="#switchToEmployeeList" prefHeight="49.0" prefWidth="229.0" style="-fx-background-color: white; -fx-border-color: black;" text="Edit Employee">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

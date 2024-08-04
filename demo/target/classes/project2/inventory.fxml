@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="768.0" prefWidth="1024.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.InventoryController">
+   <children>
+      <AnchorPane prefHeight="777.0" prefWidth="1027.0">
+         <children>
+            <Button layoutX="591.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteIngredient" style="-fx-background-color: white; -fx-border-color: black;" text="Delete Item">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="delete_item" layoutX="809.0" layoutY="144.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Label layoutX="915.0" layoutY="1.0" text="Manager">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="inventory" layoutX="13.75" layoutY="59.0" mnemonicParsing="false" onAction="#initialize" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Inventory">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToTrends" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Trends">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="513.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToSupplierOrder" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Supplier Orders">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="763.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Edit">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="763.0" layoutY="657.0" mnemonicParsing="false" onAction="#saveChanges" style="-fx-background-color: white; -fx-border-color: black;" text="Submit Changes">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <ScrollPane fx:id="scrollPane" layoutX="14.0" layoutY="187.0" prefHeight="448.0" prefWidth="1000.0">
+               <content>
+                  <AnchorPane fx:id="dynamicAnchorPaneContainer" prefHeight="455.0" prefWidth="1000.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="52.0" layoutY="137.0" text="Inventory Items">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="426.0" layoutY="657.0" mnemonicParsing="false" onAction="#switchToFifth" style="-fx-background-color: white; -fx-border-color: black;" text="Add Item">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="73.0" layoutY="657.0" mnemonicParsing="false" onAction="#switchToFourth" style="-fx-background-color: white; -fx-border-color: black;" text="Inventory Warning">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="5.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: white; -fx-border-color: black;" text="Refresh">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="635.0" layoutY="-7.0" mnemonicParsing="false" onAction="#switchToEmployeeList" prefHeight="49.0" prefWidth="229.0" style="-fx-background-color: white; -fx-border-color: black;" text="Edit Employee">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

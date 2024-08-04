@@ -1,0 +1,1 @@
+SELECT order_date, SUM(total_cost) AS daily_sales FROM Customer_Orders GROUP BY order_date ORDER BY daily_sales ASC LIMIT 10;

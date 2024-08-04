@@ -1,0 +1,1 @@
+SELECT * FROM Supplier_Order_Details WHERE Ingredient = 'Cheese - American' ORDER BY Wholesale_Unit_Price ASC LIMIT 5;

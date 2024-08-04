@@ -1,0 +1,1 @@
+SELECT ingredient_name FROM Ingredients WHERE storage_location = 'Freezer';

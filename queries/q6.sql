@@ -1,0 +1,1 @@
+SELECT ingredient_name, quantity FROM Ingredients WHERE ingredient_name LIKE '%Ice Cream%' AND ingredient_name NOT LIKE '%Bowls%';

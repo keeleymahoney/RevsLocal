@@ -1,0 +1,1 @@
+SELECT order_number, total_cost FROM Customer_Orders WHERE total_cost > 15;

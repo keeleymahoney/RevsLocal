@@ -1,0 +1,1 @@
+SELECT Order_Number, Quantity_Ordered, Ingredient, Quantity_Received, Received FROM Supplier_Order_Details WHERE Received = false;

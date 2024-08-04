@@ -1,0 +1,1 @@
+SELECT * FROM supplier_order_details WHERE quantity_ordered != quantity_received;

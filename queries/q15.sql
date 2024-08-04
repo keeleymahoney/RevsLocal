@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM Customer_Orders WHERE order_date = CURRENT_DATE - INTERVAL '1 day' AND order_time BETWEEN '11:00:00' AND '14:00:00';

@@ -1,0 +1,233 @@
+.menu-item-button {
+    -fx-background-color: #ffffff; 
+    -fx-border-width: 1; 
+    -fx-border-color: #000000;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-min-width: 350px;
+    -fx-min-height: 50px;
+    -fx-max-width: 350px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50.0px;
+    -fx-pref-width: 350.0px;
+    -fx-alignment: center;
+}
+.clicked-button {
+    -fx-background-color: #c7919a;
+}
+
+.menu-category-button {
+    -fx-background-color: white; 
+    -fx-border-color: black; 
+    -fx-border-width: 1;
+    -fx-text-fill: black;
+}
+
+.clicked-menu-category {
+    -fx-background-color: #500000; 
+    -fx-border-width: 0; 
+    -fx-text-fill: white;
+}
+.plus-minus-button {
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-pref-height: 30.0px;
+    -fx-pref-width: 30.0px;
+    -fx-background-color: #500000;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+/* Used for item name, ingredient text on checkout screen*/
+.checkout-item-text {
+    -fx-pref-height: 35px;
+    -fx-pref-width: 500px;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-padding: 0 0 0 10.0; /* left padding */
+}
+
+/* Used for item price text on checkout screen*/
+.checkout-item-price-text {
+    -fx-pref-height: 35px;
+    -fx-pref-width: 100px;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-padding: 0 0 0 10.0; /* left padding */
+}
+
+/* Used for ingredient or item name quantity */
+.checkout-quantity-text {
+    -fx-pref-height: 35;
+    -fx-pref-width: 70px;
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+}
+
+/* Used for ingredient or item name quantity */
+.checkout-quantity-red-text {
+    -fx-text-fill: red;
+}
+
+
+/* Used for the menu item VBox on checkout screen*/
+.checkout-menu-item {
+    -fx-pref-height: 55px;
+    -fx-pref-width: 1008px;
+    -fx-spacing: 10px;
+    -fx-padding: 20 20 0 0; /* top bottom left and right padding*/
+}
+
+/* Used for the item row HBox on checkout screen*/
+.checkout-item-row {
+    -fx-pref-height: 55px;
+    -fx-pref-width: 1008px;
+    -fx-spacing: 10px;
+}
+
+/* Used for the ingredient row HBox on checkout screen*/
+.checkout-ingredient-row {
+    -fx-pref-height: 55px;
+    -fx-pref-width: 1008px;
+    -fx-spacing: 10px;
+    -fx-padding: 5 0 0 40.0; /* top = 5 and right = 40 padding */
+}
+
+.cheese-button {
+    -fx-pref-height: 35px;
+    -fx-pref-width: 187px;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
+
+.selected-cheese-button {
+    -fx-background-color: #500000;
+    -fx-text-fill: white;
+}
+
+.checkout-toggle-bar {
+    -fx-pref-height: 35px;
+    -fx-pref-width: 608px;
+}
+
+.employee-text {
+    -fx-font-size: 20px;
+    -fx-pref-width: 190px;
+    -fx-pref-height: 50px;
+    -fx-alignment: center;
+}  
+
+.employee-name {
+    -fx-font-size: 20px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 50px;
+    -fx-alignment: center;
+}
+
+.employee-button {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 32px;
+    -fx-background-color: white;
+    -fx-border-color: black;
+}
+.employee-button-2 {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 32px;
+    -fx-background-color: #500000;
+    -fx-text-fill: white;
+}
+
+.employee-row {
+    -fx-pref-width: 980px;
+    -fx-pref-height: 50px;
+    -fx-min-width: 980px;
+    -fx-min-height: 50px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.employee-text-change {
+    -fx-text-fill: red;
+}
+
+.employee-add-dropdown {
+    -fx-font-size: 25px;
+    -fx-pref-width: 190px;
+    -fx-pref-height: 40px;
+}
+
+.employee-add-label {
+    -fx-pref-width: 68.5px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 25px;
+}
+
+.employee-add-input {
+    -fx-pref-height: 40px;
+    -fx-font-size: 25px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 47px;
+}
+
+.employee-add-vbox {
+    -fx-pref-height: 180px;
+    -fx-pref-width: 333px;
+    -fx-spacing: 5px;
+}
+
+.employee-add-hbox {
+    -fx-pref-width: 980px;
+    -fx-pref-height: 333px;
+    -fx-min-width: 980px;
+    -fx-min-height: 50px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+.checkout-receipt {
+    -fx-pref-width: 415px;
+    -fx-pref-height: 300px;
+    -fx-min-width: 415px;
+    -fx-min-height: 300px;
+    -fx-max-width: 415px;
+    -fx-max-height: 300px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-alignment: top-center;
+    -fx-padding: 20.0 0 0 0;
+}
+
+.checkout-receipt-message {
+    -fx-alignment: center;
+    -fx-background-color: #500000;
+    -fx-text-fill: white;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 65px;
+    -fx-font-size: 30px;
+}
+
+.checkout-receipt-id {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 62px;
+    -fx-font-size: 25px;
+}
+
+.checkout-receipt-total {
+    -fx-alignment: top-left;
+    -fx-font-size: 25px;
+    -fx-pref-height: 90px;
+    -fx-pref-width: 200px;
+}
+
+.checkout-receipt-back {
+    -fx-pref-width: 182px;
+    -fx-pref-height: 44px;
+    -fx-font-size: 23px;
+    -fx-text-fill: white;
+    -fx-background-color: #500000;
+}

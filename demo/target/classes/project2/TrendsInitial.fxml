@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="768.0" prefWidth="1024.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.TrendsInitial">
+   <children>
+      <AnchorPane prefHeight="777.0" prefWidth="1027.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="116.0" prefHeight="516.0" prefWidth="995.0">
+               <children>
+                  <ScrollPane fx:id="scrollTrends" layoutX="2.0" layoutY="65.0" prefHeight="451.0" prefWidth="990.0">
+                     <content>
+                        <StackPane fx:id="centerLineChart" prefHeight="441.0" prefWidth="978.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="productUsageButton" layoutY="26.0" mnemonicParsing="false" onAction="#productUsage" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: white; -fx-border-color: black;" text="Product Usage Report">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="salesButton" layoutX="207.5" layoutY="26.0" mnemonicParsing="false" onAction="#salesReport" prefWidth="160.0" style="-fx-background-color: white; -fx-border-color: black;" text="Sales Report">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="excessButton" layoutX="622.5" layoutY="26.0" mnemonicParsing="false" onAction="#excessReport" prefWidth="160.0" style="-fx-background-color: white; -fx-border-color: black;" text="Excess Report">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="restockButton" layoutX="830.0" layoutY="26.0" mnemonicParsing="false" onAction="#loadRestock" prefWidth="160.0" style="-fx-background-color: white; -fx-border-color: black;" text="Restock Report">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sellsTogetherButton" layoutX="415.0" layoutY="26.0" mnemonicParsing="false" onAction="#whatSells" prefWidth="160.0" style="-fx-background-color: white; -fx-border-color: black;" text="What Sells Together">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="915.0" layoutY="1.0" text="Manager">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="13.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToIntentory" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Inventory">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="trendsButton" layoutX="263.75" layoutY="59.0" mnemonicParsing="false" onAction="#initialize" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Trends">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="513.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToSupplierOrder" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Supplier Orders">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="763.75" layoutY="59.0" mnemonicParsing="false" onAction="#switchToEdit" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black;" text="Edit">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="5.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: white; -fx-border-color: black;" text="Refresh">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <TextField fx:id="date1TextField" layoutX="101.0" layoutY="666.0" prefHeight="26.0" prefWidth="143.0" visible="false" />
+            <TextField fx:id="date2TextField" layoutX="367.0" layoutY="664.0" prefHeight="26.0" prefWidth="132.0" visible="false" />
+            <Label fx:id="date1Label" layoutX="4.0" layoutY="657.0" prefHeight="48.0" prefWidth="87.0" style="-fx-background-color: white; -fx-border-color: black;" text="Date 1:" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="date2Label" layoutX="270.0" layoutY="655.0" prefHeight="48.0" prefWidth="84.0" style="-fx-background-color: white; -fx-border-color: black;" text="Date 2:" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitDate" layoutX="917.0" layoutY="656.0" mnemonicParsing="false" onAction="#submiButton" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: white; -fx-border-color: black;" text="Submit" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="warning" layoutX="277.0" layoutY="21.0" prefHeight="26.0" prefWidth="562.0" text="Warning Label" textFill="#ee0606" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="ingredientLabel" layoutX="510.0" layoutY="655.0" prefHeight="47.0" prefWidth="146.0" style="-fx-background-color: white; -fx-border-color: black;" text="Ingredient Name:" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ingredientLook" layoutX="674.0" layoutY="664.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black;" visible="false" />
+            <Button layoutX="635.0" layoutY="-7.0" mnemonicParsing="false" onAction="#switchToEmployeeList" prefHeight="49.0" prefWidth="229.0" style="-fx-background-color: white; -fx-border-color: black;" text="Edit Employee">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

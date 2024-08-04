@@ -1,0 +1,1 @@
+SELECT menu_item, COUNT(*) AS menu_item_count FROM Customer_Order_Details GROUP BY menu_item ORDER BY menu_item_count DESC LIMIT 3;

@@ -1,0 +1,1 @@
+SELECT menu_item_name, COUNT(*) as num_ingredients FROM Menu_Item_Ingredients GROUP BY menu_item_name LIMIT 20;
